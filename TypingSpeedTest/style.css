@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: rgb(170, 239, 170); */
+    background: url("abstract-art-wallpaper-3840x2160-31503.png");
+    background-size: cover;
+}
+h2{
+    font-size: 100px;
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    color: rgba(108, 76, 46, 0.5);
+    
+}
+
+h1{
+    margin: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(143, 207, 23, 0.196);
+}
+
+#wrapper{
+    width: 800px;
+    height: 230px;
+    background-color: rgba(154, 165, 37, 0.6);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#wrapper #text-area{
+    padding: 0px 0px 20px;
+}
+
+#wrapper #text-area #text-box{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+#wrapper .typing-text{
+    padding: 15px;
+    
+}
+
+#wrapper .content{
+    margin-top: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 15px;
+}
+
+.content .result-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:calc(100% - 140px);
+}
+
+.result-details li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+.content button{
+    outline: none;
+    border: none;
+    color: white;
+    background: rgb(255, 162, 0);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+ .content button:active{
+    transform: scale(0.98);
+ }
+
+ .content button:hover{
+    background:green ;
+ }
+
+#timer p span.active{
+    color: orange;
+}
